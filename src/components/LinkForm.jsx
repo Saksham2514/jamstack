@@ -21,7 +21,8 @@ export default function LinkForm({ refreshLinks }) {
             });
             resetForm();
             refreshLinks();
-        } catch (error) {
+        } catch (error) {  
+            
             console.error(error);
         }
     };
