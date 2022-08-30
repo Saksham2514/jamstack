@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Saksham2514/jamstack/static/css/main.e6c13ad2.css",
+    "main.js": "/Saksham2514/jamstack/static/js/main.1dc31f92.js",
+    "static/js/787.50eb52de.chunk.js": "/Saksham2514/jamstack/static/js/787.50eb52de.chunk.js",
+    "index.html": "/Saksham2514/jamstack/index.html",
+    "main.e6c13ad2.css.map": "/Saksham2514/jamstack/static/css/main.e6c13ad2.css.map",
+    "main.1dc31f92.js.map": "/Saksham2514/jamstack/static/js/main.1dc31f92.js.map",
+    "787.50eb52de.chunk.js.map": "/Saksham2514/jamstack/static/js/787.50eb52de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.1dc31f92.js"
+  ]
+}
