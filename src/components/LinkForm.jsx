@@ -19,7 +19,7 @@ export default function LinkForm({ refreshLinks }) {
                 method: 'POST',
                 body: JSON.stringify(body),
             });
-            resetForm();
+            resetForm(); 
             refreshLinks();
         } catch (error) {
             console.error(error);
