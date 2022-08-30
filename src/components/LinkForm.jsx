@@ -15,14 +15,13 @@ export default function LinkForm({ refreshLinks }) {
         e.preventDefault();
         const body = { name, url, description };
         try {
-            await fetch('/.netlify/functions/createLinks', {
+             await fetch('/.netlify/functions/createLinks', {
                 method: 'POST',
                 body: JSON.stringify(body),
             });
             resetForm();
             refreshLinks();
-        } catch (error) {  
-            
+        } catch (error) {
             console.error(error);
         }
     };
