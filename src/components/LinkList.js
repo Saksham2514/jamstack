@@ -18,7 +18,8 @@ export default function LinkList({ links, refreshLinks }) {
             <h2 className="my-4">Archived</h2>
             {links &&
                 links
-                .find(function(link) {return link.archived === false})
+                // .find(function(link) {return link.archived === false})
+                .filter((item)=>{return item.archived !== false  })
                     .map((link) => (
                         <LinkCard
                             key={link._id}
