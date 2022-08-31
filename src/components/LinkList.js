@@ -19,7 +19,7 @@ export default function LinkList({ links, refreshLinks }) {
             {links &&
                 links
                 // .find(function(link) {return link.archived === false})
-                .filter((item)=>{return item.archived !== false  })
+                .filter((item)=>{return item.archived === false  })
                     .map((link) => (
                         <LinkCard
                             key={link._id}
