@@ -15,12 +15,11 @@ export default function LinkForm({ refreshLinks }) {
         e.preventDefault();
         const body = { name, url, description };
         try {
-            
-             await fetch('/.netlify/functions/createLinks', { 
+            const res = await fetch('/.netlify/functions/createLink', {
                 method: 'POST',
                 body: JSON.stringify(body),
             });
-            resetForm(); 
+            resetForm();
             refreshLinks();
         } catch (error) {
             console.error(error);
@@ -31,7 +30,7 @@ export default function LinkForm({ refreshLinks }) {
             <div className="card-header">Add Link</div>
             <div className="card-body">
                 <form onSubmit={handleSubmit}>
-                    <div className="form-group mb-3">
+                    <div className="form-group">
                         <label htmlFor="name">Name</label>
                         <input
                             type="text"
@@ -41,7 +40,7 @@ export default function LinkForm({ refreshLinks }) {
                             onChange={(e) => setName(e.target.value)}
                         />
                     </div>
-                    <div className="form-group mb-3">
+                    <div className="form-group">
                         <label htmlFor="url">URL</label>
                         <input
                             type="text"
@@ -51,7 +50,7 @@ export default function LinkForm({ refreshLinks }) {
                             onChange={(e) => setUrl(e.target.value)}
                         />
                     </div>
-                    <div className="form-group mb-3">
+                    <div className="form-group">
                         <label htmlFor="description">Description</label>
                         <textarea
                             name="description"
